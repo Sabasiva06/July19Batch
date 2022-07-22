@@ -49,8 +49,23 @@ public class BrowserLaunch {
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp);
 
+
 		WebElement scroll = driver.findElement(By.xpath("//h3[contains(text(),'Inheritance')]"));
 		js.executeScript("arguments[0].scrollIntoView(true)", scroll);
+		
+
+		WebElement scrollUp1 = driver.findElement(By.xpath("//div[text()='Courses ']"));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp1);
+		
+
+		WebElement scrollUp3 = driver.findElement(By.xpath("//div[text()='Courses ']"));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp3);
+		
+		
+		
+		
 
 	}
 
