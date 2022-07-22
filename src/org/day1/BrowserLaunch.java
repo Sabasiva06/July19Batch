@@ -48,6 +48,20 @@ public class BrowserLaunch {
 		WebElement scrollUp = driver.findElement(By.xpath("//div[text()='Courses ']"));
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp);
+		
+
+		WebElement scrollUp1 = driver.findElement(By.xpath("//div[text()='Courses ']"));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp1);
+		
+
+		WebElement scrollUp3 = driver.findElement(By.xpath("//div[text()='Courses ']"));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp3);
+		
+		
+		
+		
 	}
 
 }
