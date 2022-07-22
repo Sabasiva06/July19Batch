@@ -48,6 +48,10 @@ public class BrowserLaunch {
 		WebElement scrollUp = driver.findElement(By.xpath("//div[text()='Courses ']"));
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView(false)", scrollUp);
+
+
+		WebElement scroll = driver.findElement(By.xpath("//h3[contains(text(),'Inheritance')]"));
+		js.executeScript("arguments[0].scrollIntoView(true)", scroll);
 		
 
 		WebElement scrollUp1 = driver.findElement(By.xpath("//div[text()='Courses ']"));
@@ -62,6 +66,7 @@ public class BrowserLaunch {
 		
 		
 		
+
 	}
 
 }
